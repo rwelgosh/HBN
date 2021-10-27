@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+/* =========================================== */
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    background-color:  #ddd;
+    position: relative;
+}
+
+.search {
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+}
+
+.searchButton {
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.i-content {
+    text-align: center;
+    position: relative;
+}
+
+.container-shop {
+    float: left;
+    width: 50%;
+    height: 100vh;
+}
+
+.shopbkgrnd {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.shop-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.shopbkgrnd:hover {
+    opacity: 0.5;
+}
+
+/* .solidcolor {
+
+} */
+
+.shopbutton {
+    position: fixed;
+    top: -40%;
+}
+
+a.shopbutton {
+    position: relative;
+
+    display: inline-block;
+    padding: 1.2em 2em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+a.shopbutton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(135deg, #234e70, #fdf559);
+    border-radius: 4px;
+    transition: box-shadow 0.5s ease, transform 0.2s ease;
+    will-change: transform;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
+}
+a.shopbutton:hover::before {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+}
+a.shopbutton::after {
+    position: relative;
+    display: inline-block;
+    content: attr(data-title);
+    transition: transform 0.2s ease;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    will-change: transform;
+    transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
+}
+
+
+/* =========================================== */
+
+#about-us {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
